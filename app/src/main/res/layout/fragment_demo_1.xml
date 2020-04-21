@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="default"
+        android:textSize="12sp"/>
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/demo_1_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="custom colors, show section mark, progress:50"
+        android:textSize="12sp"/>
+
+    <com.xw.repo.BubbleSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:bsb_progress="50"
+        app:bsb_second_track_color="@color/color_green"
+        app:bsb_show_section_mark="true"
+        app:bsb_track_color="@color/color_gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="custom track size, min:100, max:500"
+        android:textSize="12sp"/>
+
+    <com.xw.repo.BubbleSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:bsb_max="500"
+        app:bsb_min="100.0"
+        app:bsb_progress="200.0"
+        app:bsb_second_track_color="@color/color_blue"
+        app:bsb_track_size="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="section count:5, custom bubble attrs, show thumb text"/>
+
+    <com.xw.repo.BubbleSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:bsb_bubble_color="@color/color_red_light"
+        app:bsb_bubble_text_color="@color/color_green"
+        app:bsb_bubble_text_size="18sp"
+        app:bsb_max="50"
+        app:bsb_min="-50"
+        app:bsb_second_track_color="@color/color_red"
+        app:bsb_section_count="5"
+        app:bsb_show_section_mark="true"
+        app:bsb_thumb_text_size="18sp"/>
+
+<!--
+app:bsb_section_text_position="below_section_mark"
+ app:bsb_show_thumb_text="true"
+ app:bsb_auto_adjust_section_mark="true" //停止滚动到指定位置
+ bsb_bubble_text_size头部文字大小
+
+ app:bsb_track_size="4dp"  //线条粗细
+ app:bsb_second_track_size="4dp"
+
+  app:bsb_thumb_radius="10dp"  //半径
+ app:bsb_thumb_radius_on_dragging="20dp"
+ bsb_hide_bubble 是否显示顶部提示
+-->
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/demo_1_seek_bar_5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        app:bsb_always_show_bubble="true"
+        app:bsb_touch_to_seek="true"
+
+        app:bsb_track_size="4dp"
+        app:bsb_second_track_size="4dp"
+        app:bsb_bubble_text_size="13dp"
+        app:bsb_section_count="4"
+        app:bsb_show_section_mark="true"
+        app:bsb_thumb_radius="10dp"
+        app:bsb_thumb_radius_on_dragging="20dp"
+        app:bsb_second_track_color="#32ADF5"
+        app:bsb_track_color="#84878F"/>
+
+    <Button
+        android:id="@+id/demo_1_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/set_random_progress"/>
+</LinearLayout>
