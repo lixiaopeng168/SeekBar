@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [![API](https://img.shields.io/badge/API-16%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=16)
 [![License](http://img.shields.io/badge/License-Apache%202.0-brightgreen.svg?style=flat)](https://opensource.org/licenses/Apache-2.0)
 
@@ -155,6 +156,10 @@ BTW, the attr `bsb_show_thumb_text` will be set to `false` automatically for avo
    See the License for the specific language governing permissions and
    limitations under the License.
 ```
+=======
+# SeekBar
+根据BubbleSeekBar修改，将拖动点设置为图片。修改气泡为聊天窗口样式。
+>>>>>>> 4b177d2e53ec4f4bdee9a2b34d88b0c75177deab
 =======
 # SeekBar
 根据BubbleSeekBar修改，将拖动点设置为图片。修改气泡为聊天窗口样式。
