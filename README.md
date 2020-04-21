@@ -31,6 +31,7 @@
 ##### 根据BubbleSeekBar修改，详细使用和注意事项查看。
 [BubbleSeekBar](https://github.com/woxingxiao/BubbleSeekBar/blob/master/README_zh.md)
 
+### 如需修改成你想要的效果样式，请添加QQ 2305600865。 请备注：seekbar修改
 
 ## 注意事项  
 - There are two versions of this library.The differences as follow:  
