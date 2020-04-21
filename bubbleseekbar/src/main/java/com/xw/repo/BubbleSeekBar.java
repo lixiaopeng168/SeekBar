@@ -638,6 +638,7 @@ public class BubbleSeekBar extends View {
             canvas.drawLine(xRight, yTop, mThumbCenterX, yTop, mPaint);
         } else {
             canvas.drawLine(xLeft, yTop, mThumbCenterX, yTop, mPaint);
+
         }
 
         // draw second track

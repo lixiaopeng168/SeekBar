@@ -69,4 +69,5 @@ has been set to `below_section_mark` at first, then follow the example below in 
        }
    });
 ```
+##### 如需修改成你想要的效果样式，请添加QQ 2305600865。 请备注：seekbar修改
 
