@@ -200,7 +200,14 @@ public class BubbleSeekBar extends View {
         isRtl = a.getBoolean(R.styleable.BubbleSeekBar_bsb_rtl, false);
         setEnabled(a.getBoolean(R.styleable.BubbleSeekBar_android_enabled, isEnabled()));
 
-        thumbBitmap = BubbleUtils.imageScale(BitmapFactory.decodeResource(getResources(),R.drawable.trade_node_tips),dp2px(19),dp2px(25));
+        int w = a.getDimensionPixelSize(R.styleable.BubbleSeekBar_bsb_thumb_width,dp2px(19));
+        int h = a.getDimensionPixelSize(R.styleable.BubbleSeekBar_bsb_thumb_height,dp2px(25));
+        isThumbBitmap = a.getBoolean(R.styleable.BubbleSeekBar_bsb_show_thumb_bitmap,false);
+        if (isThumbBitmap) {
+            int bt = a.getResourceId(R.styleable.BubbleSeekBar_bsb_thumb_image, R.drawable.trade_node_tips);
+//            thumbBitmap = BubbleUtils.imageScale(BitmapFactory.decodeResource(getResources(), R.mipmap.trade_node_tips), dp2px(19), dp2px(25));
+            thumbBitmap = BubbleUtils.imageScale(BitmapFactory.decodeResource(getResources(), bt), w, h);
+        }
 
         a.recycle();
 

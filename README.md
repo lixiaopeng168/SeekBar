@@ -1,36 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-[![API](https://img.shields.io/badge/API-16%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=16)
-[![License](http://img.shields.io/badge/License-Apache%202.0-brightgreen.svg?style=flat)](https://opensource.org/licenses/Apache-2.0)
-
-[**中文说明**](https://github.com/woxingxiao/BubbleSeekBar/blob/master/README_zh.md)
-
-![logo](https://github.com/woxingxiao/BubbleSeekBar/blob/master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png)
-
-**A beautiful Android custom seek bar, which has a bubble view with progress appearing upon when seeking. Highly customizable, mostly demands has been considered. `star` or `pull request` will be welcomed**
-****
-## Screenshot
-![demo1](https://github.com/woxingxiao/BubbleSeekBar/blob/master/screenshot/demo1.gif)
-![demo2](https://github.com/woxingxiao/BubbleSeekBar/blob/master/screenshot/demo2.gif)
-******
-![demo3](https://github.com/woxingxiao/BubbleSeekBar/blob/master/screenshot/demo3.gif)
-![demo4](https://github.com/woxingxiao/BubbleSeekBar/blob/master/screenshot/demo4.gif)
-
-## Download
-The **LATEST_VERSION**: [![Download](https://api.bintray.com/packages/woxingxiao/maven/bubbleseekbar/images/download.svg)](https://bintray.com/woxingxiao/maven/bubbleseekbar/_latestVersion)
-```groovy
-  dependencies {
-     // lite version (recommended)
-     // e.g. implementation 'com.xw.repo:bubbleseekbar:3.20-lite'
-        implementation 'com.xw.repo:bubbleseekbar:${LATEST_VERSION}-lite'
-
-     // enhanced version
-     // e.g. implementation 'com.xw.repo:bubbleseekbar:3.20'
-     // implementation 'com.xw.repo:bubbleseekbar:${LATEST_VERSION}'
-  }
-```
-
+##### 根据BubbleSeekBar修改，如需查看原作者源码请访问
+[BubbleSeekBar](https://github.com/woxingxiao/BubbleSeekBar/blob/master/README_zh.md)
+### 效果
+![修改效果图](https://github.com/lixiaopeng168/SeekBar/tree/master/screenshot/demo5.gif)
 ## Usage  
 ### Init in xml
 ```xml
@@ -49,22 +20,12 @@ The **LATEST_VERSION**: [![Download](https://api.bintray.com/packages/woxingxiao
     app:bsb_show_section_mark="true"
     app:bsb_show_section_text="true"
     app:bsb_show_thumb_text="true"
+    app:bsb_show_thumb_bitmap="true"
+    app:bsb_thumb_width="@dimen/normal_40dp"
+    app:bsb_thumb_height="@dimen/normal_50dp"
     app:bsb_track_color="@color/color_red_light"/>
 ```
-```xml
-<com.xw.repo.BubbleSeekBar
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:bsb_auto_adjust_section_mark="true"
-    app:bsb_second_track_color="@color/color_blue"
-    app:bsb_section_count="5"
-    app:bsb_section_text_position="below_section_mark"
-    app:bsb_show_section_mark="true"
-    app:bsb_show_section_text="true"
-    app:bsb_show_thumb_text="true"
-    app:bsb_thumb_text_size="18sp"
-    app:bsb_touch_to_seek="true"/>
-```
+
 ### Init in java (not for **_lite_** version)
 ```java
 mBbubbleSeekBar.getConfigBuilder()
@@ -127,44 +88,4 @@ has been set to `below_section_mark` at first, then follow the example below in 
        }
    });
 ```
-BTW, the attr `bsb_show_thumb_text` will be set to `false` automatically for avoiding the text coverage display problems.
-- The attr `bsb_always_show_bubble` is not supported in the `RecyclerView`, `ListView` and `GridView`.
 
-## Attributes
-[attr.xml](https://github.com/woxingxiao/BubbleSeekBar/blob/master/bubbleseekbar/src/main/res/values/attr.xml)
-## How to submit a valid issue
-- **Make sure you compiled the latest version.** If it still doesn't work out, don't hesitate to open a new issue.
-- Describe the scenarios or operates when crash happened as much as possible(pictures would be better).
-- Tell me your device type and Android OS version is very helpful.
-- Paste your xml or java code.
-- Paste the crash log.
-- Please be polite.
-
-## License
-```
-   Copyright 2017 woxingxiao
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-```
-=======
-# SeekBar
-根据BubbleSeekBar修改，将拖动点设置为图片。修改气泡为聊天窗口样式。
->>>>>>> 4b177d2e53ec4f4bdee9a2b34d88b0c75177deab
-=======
-# SeekBar
-根据BubbleSeekBar修改，将拖动点设置为图片。修改气泡为聊天窗口样式。
->>>>>>> 4b177d2e53ec4f4bdee9a2b34d88b0c75177deab
-=======
-# SeekBar
-根据BubbleSeekBar修改，将拖动点设置为图片。修改气泡为聊天窗口样式。
->>>>>>> 4b177d2e53ec4f4bdee9a2b34d88b0c75177deab
